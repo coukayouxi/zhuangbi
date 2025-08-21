@@ -1,0 +1,40 @@
+<!-- chat.html -->
+<div class="page">
+    <div class="header">
+        <h3>AI聊天助手</h3>
+        <div class="model-selector">
+            <label for="model-select">模型:</label>
+            <select id="model-select">
+                <option value="Qwen/Qwen3-8B" selected>Qwen/Qwen3-8B</option>
+                <option value="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B">DeepSeek-R1</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="messages-container" id="messages-container">
+            <div class="message ai-message">
+                <div class="message-header">
+                    <i class="fas fa-robot"></i> AI助手
+                </div>
+                <div class="message-content">
+                    <p>您好！我是AI助手，我可以帮助您回答问题、提供信息、协助创作等。请问有什么我可以帮您的吗？</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="input-area">
+                <textarea 
+                    class="message-input" 
+                    id="message-input" 
+                    placeholder="输入您的消息..." 
+                    rows="1"
+                ></textarea>
+                <button class="send-button" id="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI助手工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-robot"></i> <span>AI助手</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-item active" data-route="chat">
+                    <i class="fas fa-comments"></i>
+                    <span>聊天</span>
+                </div>
+                <div class="sidebar-menu-item" data-route="history">
+                    <i class="fas fa-history"></i>
+                    <span>历史记录</span>
+                </div>
+                <div class="sidebar-menu-item" data-route="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>设置</span>
+                </div>
+                <div class="sidebar-menu-item" data-route="about">
+                    <i class="fas fa-info-circle"></i>
+                    <span>关于</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主内容区域 -->
+        <div class="main-content">
+            <div id="page-content">
+                <!-- 页面内容将通过路由加载 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="router.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
